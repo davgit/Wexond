@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url("../../global/fonts/Roboto-Regular.woff2") format('woff2');
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.menu {
+  background-color: white;
+  width: 100%;
+  max-height: calc(100vh - 60px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding-bottom: 8px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.menu-pages {
+  position: relative;
+  width: 100%;
+}
+
+.tab-page {
+  margin-top: 8px;
+  position: absolute !important;
+  width: 100% !important;
+  top: 0;
+}

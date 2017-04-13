@@ -1,0 +1,32 @@
+.menu-toolbar {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  height: 100%;
+  width: 49px;
+  margin-left: 6px;
+  position: relative;
+  float: left;
+  opacity: 0.54;
+  transition: 0.2s opacity;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 0.87;
+  }
+}
+
+.icons {
+  position: relative;
+  height: 42px;
+}
+
+.disabled-icon {
+  pointer-events: none;
+  opacity: 0.38;
+}

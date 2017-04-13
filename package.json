@@ -1,0 +1,52 @@
+{
+  "name": "Wexond",
+  "version": "0.0.5",
+  "main": "main.js",
+  "license": "MIT",
+  "repository": "Nersent/Wexond",
+  "scripts": {
+    "start": "cross-env ENV=dev electron main.js",
+    "applets": "webpack --config webpack.config.applets.js && webpack-dev-server --hot --inline --config webpack.config.applets.js --port 8181",
+    "browser": "webpack --config webpack.config.browser.js && webpack-dev-server --config webpack.config.browser.js --hot --inline --port 8080",
+    "build-package": "webpack --config webpack.config.browser.production.js",
+    "all": "npm run build-package && electron-packager . --all Wexond --overwrite",
+    "win32": "npm run build-package && electron-packager . --platform=win32 --arch=x86 Wexond --overwrite",
+    "win64": "npm run build-package && electron-packager . --platform=win32 --arch=x64 Wexond --overwrite",
+    "linux32": "npm run build-package && electron-packager . --platform=linux --arch=x86 Wexond --overwrite",
+    "linux64": "npm run build-package && electron-packager . --platform=linux --arch=x64 Wexond --overwrite"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "electron": "latest",
+    "node-dir": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-motion": "latest"
+  },
+  "devDependencies": {
+    "asar": "latest",
+    "babel-core": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-class-properties": "latest",
+    "babel-preset-stage-0": "latest",
+    "cross-env": "latest",
+    "css-loader": "latest",
+    "electron-packager": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-react": "latest",
+    "node-sass": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest",
+    "url-loader": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "peerDependencies": {
+    "sass-loader": "latest"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
