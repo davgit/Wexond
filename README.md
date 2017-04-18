@@ -1,4 +1,4 @@
-<h1 align="center"><img src="http://89.38.146.104/wexond/logo/wexond.png" width="400"></h1>
+<h1 align="center"><img src="http://wexond.nersent.tk/logo/wexond.png" width="400"></h1>
 
 [![Build Status](https://travis-ci.org/Nersent/Wexond.svg?branch=refactor)](https://travis-ci.org/Nersent/Wexond)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com)
